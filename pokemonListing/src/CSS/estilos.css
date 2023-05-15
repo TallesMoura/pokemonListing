@@ -125,6 +125,14 @@ main .cartao-pokemon .tipo{
     background-color: #eed535;
 }
 
+.terrestre{
+    background-color: #ab9842;
+}
+
+.fada{
+    background-color: #fdb9e9;
+}
+
 main .descricao{
     max-height: 5rem;
     overflow: scroll;
