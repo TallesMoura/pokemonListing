@@ -1,0 +1,133 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 80rem;
+    margin: 0 auto 0 auto;
+    background-color: #5e5b5bad;
+    color: #333333;
+}
+body.modo-escuro{
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5625rem;
+}
+
+header .logo,
+header .imagem-botao{
+    width: 1.875rem;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 1.5625rem;
+}
+
+main .listagem-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.875rem;
+    justify-content: center;
+}
+
+main .cartao-pokemon{
+    background-color: #d8e3ec;
+    width: 12.5rem;
+    padding: 0.9375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9375rem;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover{
+    background-color: #96d9d6;
+}
+
+.modo-escuro .cartao-pokemon{
+    background-color: #a8a8a8;
+}
+
+main .cartao-pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 0.0625rem solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .gif{
+    width: 60px;
+    height: 60px;
+}
+
+main .cartao-pokemon .informacoes span{
+    padding: 0.3125rem;
+    text-transform: uppercase;
+    font-size: 1.0625rem;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 0.9375rem;
+}
+  
+main .cartao-pokemon .tipo{
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.grama{
+    background-color: #9bcc50;
+}
+
+.veneno{
+    background-color: #b97fc9;
+}
+
+.fogo{
+    background-color: #fd7d24;
+}
+
+.agua{
+    background-color: #4592c4;
+}
+
+.voador{
+    background-color: #3dc7ef;
+}
+
+.inseto{
+    background-color: #729f3f;
+}
+
+.normal{
+    background-color: #83898b;
+}
+
+.eletrico{
+    background-color: #eed535;
+}
+
+main .descricao{
+    max-height: 5rem;
+    overflow: scroll;
+    font-size: 14px;
+    padding-right: 0.625rem;
+}
